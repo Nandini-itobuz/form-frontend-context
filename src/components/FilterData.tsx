@@ -1,13 +1,16 @@
-import { useContext } from 'react';
-import { FormProvider, useForm } from 'react-hook-form';
-import { FaFilter } from 'react-icons/fa';
-import SelectFormInput from './FormInputs/SelectFormInput';
-import { Position } from '../enums/positions';
-import { JobApplicationContext, JobApplicationContextType } from '../context/JobApplicationContext';
+import { useContext } from "react";
+import { FormProvider, useForm } from "react-hook-form";
+import { FaFilter } from "react-icons/fa";
+import SelectFormInput from "./FormInputs/SelectFormInput";
+import { Position } from "../enums/positions";
+import { JobApplicationContext } from "../context/JobApplicationContext";
+import { JobApplicationContextType } from "../interfaces/applicationContextInterface";
 
 const FilterData = () => {
   const method = useForm();
-  const { setPage, setShowFilteredPosition } = useContext(JobApplicationContext) as JobApplicationContextType;
+  const { setPage, setShowFilteredPosition } = useContext(
+    JobApplicationContext,
+  ) as JobApplicationContextType;
 
   return (
     <div className="flex items-center px-4 rounded-md bg-[#37374B] w-[260px]">

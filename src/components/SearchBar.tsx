@@ -1,12 +1,15 @@
-import { FormProvider, useForm } from 'react-hook-form';
-import { FaSearch } from 'react-icons/fa';
-import GenericInput from './FormInputs/GenericInput';
-import { useContext } from 'react';
-import { JobApplicationContext, JobApplicationContextType } from '../context/JobApplicationContext';
+import { FormProvider, useForm } from "react-hook-form";
+import { FaSearch } from "react-icons/fa";
+import GenericInput from "./FormInputs/GenericInput";
+import { useContext } from "react";
+import { JobApplicationContext } from "../context/JobApplicationContext";
+import { JobApplicationContextType } from "../interfaces/applicationContextInterface";
 
 const SearchBar = () => {
   const method = useForm();
-  const { searchItems } = useContext(JobApplicationContext) as JobApplicationContextType;
+  const { searchItems } = useContext(
+    JobApplicationContext,
+  ) as JobApplicationContextType;
 
   return (
     <div className="flex items-center px-4 rounded-md bg-[#37374B] font-bold w-[260px]">

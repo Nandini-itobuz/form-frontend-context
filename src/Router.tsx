@@ -5,7 +5,6 @@ import JobApplicationProvider from "./context/JobApplicationContext";
 const Router = () => {
   return (
     <Routes>
-      
       <Route path="/" element={<Home />} />
     </Routes>
   );

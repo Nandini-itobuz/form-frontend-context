@@ -10,7 +10,6 @@ const App: FC = () => {
         <Router />
       </BrowserRouter>
     </JobApplicationProvider>
-
   );
 };
 
