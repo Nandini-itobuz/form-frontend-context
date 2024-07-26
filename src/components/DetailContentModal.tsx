@@ -9,11 +9,10 @@ interface DetailValueInterface {
 }
 
 const DetailContentModal = () => {
-
   const { setShowDetailModal, formData, setFormData } = useContext(
     JobApplicationContext,
   ) as JobApplicationContextType;
-  
+
   const detailValues: DetailValueInterface[] = [
     {
       name: "First Name",
@@ -92,7 +91,6 @@ const DetailContentModal = () => {
       </div>
     </div>
   );
-
 };
 
 export default DetailContentModal;
